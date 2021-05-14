@@ -1,0 +1,66 @@
+*, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  margin-bottom: 1.75rem;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 2;
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+img {
+  margin-bottom: 1.75rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  display: flex;
+  flex-direction: coulmn;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  padding: 3rem;
+}
+
+.top {
+  background-color: #e38826;
+}
+
+.middle {
+  background-color: #006970;
+}
+
+.bottom {
+  background-color: #004241;
+}
+
+.btn {
+  border: 1px solid #f2f2f2;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  width: 100%;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/*# sourceMappingURL=style.css.map */
