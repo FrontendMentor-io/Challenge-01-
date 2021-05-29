@@ -1,37 +1,36 @@
 @use 'base';
 
-*,body{
-    margin:0;
-    padding:0;
+*,
+body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    color:base.$light-grey;
+    color: base.$light-grey;
     font-family: base.$text;
 }
 
-h1{
+h1 {
     font-family: base.$title;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 2.25rem;
     margin-bottom: 1.75rem;
-
 }
 
-p{
+p {
     font-family: base.$text;
-    font-size:.75rem ;
+    font-size: 0.75rem;
     color: base.$transparent;
     line-height: 2;
     max-width: 200px;
     margin-bottom: 2rem;
-
 }
 
-img{
+img {
     margin-bottom: 1.75rem;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 320px;
@@ -39,35 +38,64 @@ img{
     flex-direction: coulmn;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
-.card{
+.card {
     padding: 3rem;
 
-
+    .btn:hover {
+        background: white;
+    }
 }
 
-.top{
+.top {
     background-color: base.$orange;
+    .btn:hover {
+        color: base.$orange;
+    }
 }
 
-.middle{
+.middle {
     background-color: base.$cyan;
+    .btn:hover {
+        color: base.$cyan;
+    }
 }
 
-.bottom{
+.bottom {
     background-color: base.$cyan-dark;
+    .btn:hover {
+        color: base.$cyan-dark;
+    }
 }
 
-.btn{
-
+.btn {
     border: 1px solid base.$light-grey;
     padding: 1rem 2rem;
-    border-radius:20px;
-    font-size: .75rem;
-    width:100%;
-    cursor:pointer;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    width: 100%;
+    cursor: pointer;
     width: fit-content;
+}
 
+@media (min-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .card {
+        height: fit-content;
+    }
+    .top {
+        border-radius: 10px 0 0 10px;
+    }
+    .bottom {
+        border-radius: 0 10px 10px 0;
+    }
 }
